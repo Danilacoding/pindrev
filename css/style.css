@@ -36,7 +36,6 @@ ul {
 
 .section {
 	min-height: 100vh;
-
 }
 
 .container {
@@ -44,6 +43,12 @@ ul {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 44px;
+	color: var(--primary);
 }
 
 /* /global */
@@ -102,6 +107,10 @@ ul {
 /* main */
 
 .main {
+	position: relative;
+}
+
+.main__bg {
 	background-image: url(../img/tree.png);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -109,16 +118,9 @@ ul {
 }
 
 .main__inner {
-	padding-top: 160px;
 	display: flex;
-	position: relative;
-
-}
-
-.main__title {
-	font-weight: 700;
-	font-size: 44px;
-	color: var(--primary);
+	align-items: center;
+	min-height: 100vh;
 }
 
 .main__text {
@@ -150,7 +152,8 @@ ul {
 	position: absolute;
 	width: 50%;
 	right: 0;
-	top: 200px;
+	top: 55%;
+	transform: translateY(-50%);
 }
 
 .slider__navigation {
